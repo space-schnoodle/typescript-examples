@@ -1,4 +1,4 @@
-interface Vehicle {
+interface VehicleInterface {
   name: string;
   year: number;
   broken: boolean;
@@ -27,7 +27,7 @@ const drink = {
   }
 }
 
-const printVehicle = (vehicle: Vehicle): void => {
+const printVehicle = (vehicle: VehicleInterface): void => {
   console.log(`Name: ${vehicle.name}`);
   console.log(`Year: ${vehicle.year}`);
   console.log(`Broken?: ${vehicle.broken}`);
